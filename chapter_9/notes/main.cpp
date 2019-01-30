@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <list>
+#include <string>
 using namespace std;
 
 int main()
@@ -19,9 +21,9 @@ int main()
     for(int i=0;i<=100;i++){
         t.push_back(i);
     }
-//    for(auto iter=t.begin();iter!=t.end();iter++){
+//    for(auto iter=t.cbegin();iter!=t.cend();iter++){
 //        cout<<*iter<<endl;
-//    }
+//     //不需要写入时推荐使用cbegin
 
 
 //    for(auto c:t){
@@ -34,6 +36,29 @@ int main()
 //        cout<<*iter<<endl;
 //        ++iter;
 //    }
+// 一种比较特殊的初始化方式，示例从list到vector
+//    list<int> l(5,4);
+//    vector<double> v(l.begin(),l.end());
+//    for(auto c:v){
+//        cout<<c<<endl;
+//    }
 
+
+    //vector supports insert but not push_front()
+    //insert(iterator,"some thing")
+    //insert(iterator,10,"some thing")
+
+
+    //vector删除
+    //c.pop_back() c.pop_front()
+    //c.erase(iterator) //删除迭代器指定的元素
+
+    //c.erase(iterator1,iterator2)//删除
+
+//    t.erase(t.begin(),t.end()-1);
+//    if(t.begin()!=t.end()){
+//    for(auto c = t.begin();c!=t.end();c++){
+//        cout<<*c<<endl;
+//    }} //同样是左闭右开
     return 0;
 }
