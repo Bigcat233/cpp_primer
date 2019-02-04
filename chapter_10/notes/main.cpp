@@ -75,7 +75,9 @@ int main()
 //    auto location = adjacent_find(str.cbegin(),str.cend());
 //    cout<<*location<<endl;
 
-
+//初始化可以考虑使用fill或者fill_n
+    fill(number.cbegin(),number.cend(),100);
+    fill_n(number.cbegin(),10,200);
 
     return 0;
 }
