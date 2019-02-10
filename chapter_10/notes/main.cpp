@@ -80,7 +80,7 @@ int main()
     fill_n(number.cbegin(),10,200);
 //stlÅÅĞòÏê½â
 
-
+    //min max minmax
 
 
 
